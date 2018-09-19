@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("輸入三個邊長");
+        int a1 = scn.nextInt();
+        int a2 = scn.nextInt();
+        int a3 = scn.nextInt();
+        if(a1<0 || a2<0 || a3<0){
+            System.out.println("Error");
+        }
+
+        else if((a1+a2)>a3 && (a2+a3)>a1 && (a1+a3)>a2){
+            System.out.println(a1+" "+a2+" "+a3+" "+"是三角形");
+        }
+        else{
+            System.out.println(a1+" "+a2+" "+a3+" "+"不是三角形");
+        }
+
+    }
+}
