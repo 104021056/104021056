@@ -7,7 +7,7 @@ public class Main {
         System.out.println("身高(cm)");
         float a1 = scn.nextFloat();
         System.out.println("體重(kg)");
-        float a2 = scn.next();
+        float a2 = scn.nextFloat();
         double b1 = a1/(2.54f);
         double b2 = a2/(0.454f);
         System.out.println("身高(英吋)"+" "+ b1);
