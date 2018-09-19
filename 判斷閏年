@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("輸入年份(1000~3000)");
+        int a1 = scn.nextInt();
+        int v1 = a1% 4 ;
+        if(a1>3000 || a1<1000){
+            System.out.println("Error");
+        }
+
+        else if(v1==0){
+            System.out.println(a1+" "+"是閏年");
+        }
+        else{
+            System.out.println(a1+" "+"是平年");
+        }
+
+    }
+}
